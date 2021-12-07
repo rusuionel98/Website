@@ -86,7 +86,115 @@ nav ul li a:hover{
 
 .user-img{
     width: 540px;
+    position: relative;
+    top: -500px;
+    right: -1150px;
+}
+.typewriter h1 {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: 0.05em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .05em; 
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret 0.5s  step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    15% { border-color: orange }
+  }
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background: #9b9721;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
     position: absolute;
-    right: 8%;
-    bottom: 0;
+    bottom: -200px;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    background: #9b9721;
+    height: 10vh;
+    width: 200vh;
+    font-family: sans-serif;
+    padding-top: -100vh;
+    color: rgb(255, 255, 255);
+    min-width: 50px;
+    margin-top: 0.5px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 15px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+    margin-top: -5px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .15s ease;
+}
+.socials a:hover i{
+    color: rgb(194, 49, 12)
+}
+.footer.bottom{
+    background: rgb(255, 255, 255);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
